@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "independent_validation"
+version = "0.1.1"
+authors = [
+  { name="Thede von Oertzen", email="thede.vonoertzen@thomasbayes.de" },
+  { name="Hannes Diemerling", email="hannes.diemerling@thomasbayes.de" },
+  { name="Timo von Oertzen", email="timo.vonoertzen@thomasbayes.de" },
+]
+description = "IV is a Python package designed to assess the accuracy of machine learning classifiers by generating a full probability distribution of their performance. This method goes beyond traditional cross-validation by using an iterative process and Markov Chain Monte Carlo (MCMC) to estimate uncertainty. By only using samples for training after they have been tested alpha inflation is prevented."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/jonasthedevonoertzen/IV"
