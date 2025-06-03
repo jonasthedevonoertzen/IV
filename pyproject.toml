@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "independent_validation"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Thede von Oertzen", email="thede.vonoertzen@thomasbayes.de" },
   { name="Hannes Diemerling", email="hannes.diemerling@thomasbayes.de" },
@@ -19,6 +19,15 @@ classifiers = [
 ]
 license = "MIT"
 license-files = ["LICENSE"]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "scipy",
+    "pytest"
+]
 
 [project.urls]
 Homepage = "https://github.com/jonasthedevonoertzen/IV"
