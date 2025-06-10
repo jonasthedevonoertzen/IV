@@ -46,6 +46,7 @@ def main():
     '''
     group_difference()
     compare_clfs()
+    print('\nNow compare global accuracy:')
     compare_clfs(mode='acc')
     development()
 
